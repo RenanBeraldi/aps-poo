@@ -19,6 +19,8 @@ public class Funcionario {
         this.salario += (this.salario * porcentagem) / 100;
     }
 
+    // Considera-se que o tempo sera passado em dias.
+    // A cada ano, o Salario do funcionario sera aumentado em 150.
     public void calculaAumento(int tempo) {
         if (tempo > 364 && tempo < (365 * 2)) {
             this.salario += 150.0;
